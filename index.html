@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Number Game</title>
+</head>
+<body>
+  <header>Number Guessing Game</header>
+
+  <main>
+    <form>
+      <label for="username">Enter Username</label>
+      <input type="text" name="username">
+
+      <h3 id="gameStage"> Stage 1</h3>
+
+      <label for="guessedNo">Enter Number</label>
+      <input type="number" name="guessedNo">
+    </form>
+  </main>
+
+  <script>
+    var lowerLimit = 1;
+    var upperLimit = 2;
+    var guess = '';
+    var message = 'Guess a number between ' + lowerLimit + ' and ' + upperLimit + ':';
+
+    function playGame(){
+
+    var guess_num = Math.floor(Math.random()*upperLimit)+1;
+
+      return guess_num;
+
+    //getWinner(ranPlayer1, ranPlayer2);
+}
+
+    alert(playGame());
+
+
+  </script>
+
+
+  
+</body>
+</html>
