@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guessing Number Game</title>
-</head>
-<body>
-  <header>Number Guessing Game</header>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Number Guess Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
 
-  <main>
-    <form>
-      <label for="username">Enter Username</label>
-      <input type="text" name="username">
+        
+    </head>
 
-      <h3 id="gameStage"> Stage 1</h3>
+    <body onload="welcome()">
 
-      <label for="guessedNo">Enter Number</label>
-      <input type="number" name="guessedNo">
-    </form>
-  </main>
+        <h1 class="welcome"></h1>
 
-  <script>
-    var lowerLimit = 1;
-    var upperLimit = 2;
-    var guess = '';
-    var message = 'Guess a number between ' + lowerLimit + ' and ' + upperLimit + ':';
+        <div class="headerText">
+            <h2 class="stage"> Stage 1 (Guess a Number between 1 and 2)</h2>
+        </div>
+        
+        <div class="content">
+            <div class="players">
+                <input type="number" class="guessNum" name="guessNum">
+                <button class="play">Guess</button>
 
-    function playGame(){
-
-    var guess_num = Math.floor(Math.random()*upperLimit)+1;
-
-      return guess_num;
-
-    //getWinner(ranPlayer1, ranPlayer2);
-}
-
-    alert(playGame());
-
-
-  </script>
-
-
-  
-</body>
+                <h3 class="result">Stage 1</h3>
+            </div>
+            
+        </div>
+     
+        <script src="script.js"></script>
+    </body>
 </html>
